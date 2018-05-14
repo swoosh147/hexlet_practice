@@ -1,12 +1,17 @@
 <?php
 
-function F($n1)
-{
-if ($n1 > 0)   
-  {     
-    F($n1 - 4);     
-    echo ("$n1");     
-    F($n1 / 3);   
-  } 
-}
-print_r(F(9));
+$stack = [];
+array_push($stack, 3);
+print_r($stack);
+array_push($stack, 'Winterfall');
+print_r($stack);
+array_push($stack, true);
+print_r($stack);
+
+$element1 = array_pop($stack);
+print_r("\n{$element1}\n");
+print_r($stack);
+
+$element2 = array_pop($stack);
+print_r("\n{$element2}\n");
+print_r($stack);
