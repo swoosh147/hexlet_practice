@@ -15,3 +15,5 @@ function fromPairs(Array $data)
     }
     return $result;
 }
+
+print_r(fromPairs([['fred', 30], ['barney', 40]]));
