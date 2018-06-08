@@ -19,3 +19,5 @@ echo ("\n");
 print_r(union([3, 2], [2, 2, 1])); // => [3, 2, 1]
 echo ("\n");
 var_dump(union(['a', 3, false], [true, false, 3], [false, 5, 8])); // => ['a', 3, false, true, 5, 8]
+
+//для новой индексации надо добавить array_values
